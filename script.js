@@ -154,7 +154,7 @@ function connect() {
     requestBluetoothDevice()).
   then(device => connectDeviceAndCacheCharacteristic(device)).
   then(characteristic => startNotifications(characteristic)).
-  then(myInterval = setInterval(sendingBLEinfo, 75)). // timing
+  then(myInterval = setInterval(sendingBLEinfo, 100)). // timing
   catch(error => log(error));
 }
 
