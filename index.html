@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+  <container id="info">
+    <form>
+        <button id="connect" type="button">Connect</button>
+        <button id="disconnect" type="button">Disconnect</button>
+        <button class="test" id="accelPermsButton">Get Accelerometer Permissions</button>
+    </form>
+    <div id="terminal">
+      <div id="log">
+        
+      </div>
+    </div>
+	
+    <div id="logo">	<span class="speedometer"></span>
+      <span class="needle"></span>
+    </div>
+  </container>
+  <container>
+    <div class="slidecontainer">
+      <input type="range" min="-255" max="255" value="0" class="slider" id="speed" >
+    </div>
+  </container>
+	<script src="./script.js"></script>
+  </body>
+</html>
+

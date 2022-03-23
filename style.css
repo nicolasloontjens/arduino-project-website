@@ -1,0 +1,91 @@
+
+body{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightblue;  
+    font: bolder;
+}
+
+form button{
+    display: block;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 3%;
+    text-align: center;
+    background-color: rgb(145, 183, 195);
+}
+
+span{
+    margin-left: 20%;
+}
+
+#info{
+    margin-left: 15%;
+}
+
+.slidecontainer{
+    margin-bottom: 40%;
+}
+
+
+#terminal div {
+    color: gray;
+}
+
+#log{
+    height:80px;
+    overflow: auto;
+}
+
+#logo {
+    display: inline-block;
+    position: relative;
+}
+#logo .speedometer {
+    width: 200px;
+    height: 100px; /* as the half of the width */
+    background-color: gold;
+    border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    border: 10px solid gray;
+    border-bottom: 0;
+    display: inline-block;
+}
+#logo .needle {
+    width: 5px;
+    height: 100px;
+    background: #999999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    display: inline-block;
+    left: 107px;
+    position: absolute;
+    top: 10px;
+    transform-origin:bottom;
+}
+
+input[type="range"] {
+    position: absolute;
+    top: 20%;
+    transform: rotate(270deg);
+    width: 60vw;
+    height: 20vh;
+ }
+
+/*
+Force landscape mode
+*/
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+}
